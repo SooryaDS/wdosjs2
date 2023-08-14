@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">   
+   <link rel="stylesheet" href="tickets.css">  
+  
+    </head>
+    <header class="header"> 
+        <div class="marquee">Welcome To the Wonderful World Of Turtles!</div> 
+        <div class="logo">                
+            <img src="pics/TURTLELOG1.png"   class="logo"> 
+            </div>
+            <h1><b>BUY TICKETS</b></h1>
+             <p><u>Tickets</u> &gt; details &gt; payment &gt; confirmation</p></div>
+        
+      
+        <div class="navbar">
+           
+           
+             <div class="navbar ul li">          
+               <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="categories.html">turtle categories</a></li>
+                
+                <li><a href="hikk.html">hikkaduwa turtle hatchery</a></li>
+                <li><a href="threats.html">threats to turtles</a></li>
+                <li><a href="bent.html">bentota turtle hatcheries</a></li>
+                <li><a href="kos.html">kosgoda turtle hatcheries</a></li>
+                <li><a href="pnd.html">donate and purchase</a></li>
+               </ul>
+             </div>
+             
+            
+            </div>
+        </div>
+
+             
+    </header>
+    <body class="banner">
+        <div class="section1">
+            <div class="upper-container">
+       
+           
+          
+        
+            
+
+        <div class="container">  
+            <table class="content-table">
+                <tr>
+                    <th>guest</th>
+                    <th>Peak hours</th>
+                    <th>Normal hours</th>
+                </tr>
+                <tr>
+                    <td>Foreigner Adult </td>
+                    <td>13 USD</td>
+                    <td>10 USD</td>
+                </tr>
+                <tr>
+                    <td>Foreigner Child </td>
+                    <td>8 USD</td>
+                    <td>5 USD</td>
+                </tr>
+                <tr>
+                    <td>SL Adult </td>
+                    <td>6 USD</td>
+                    <td>4 USD</td>
+    
+                </tr>
+                <tr>
+                    <td>SL Child </td>
+                    <td>3 USD</td>
+                    <td>2 USD</td>
+                </tr>
+                <tr>
+                    <td>Infant</td>
+                    <td>free</td>
+                    <td>free</td>
+                </tr>
+            </table><br><br><br>
+            
+            <div class="container2">
+                    <div class="guestform">
+                        <h2>
+                        TICKET FORM:
+                        </h2>
+                    <br><br>
+                        <label for="sladult">Sri lankan Adults:<br></label>
+                        <input type="number" id="sladult" name="sladult" value="0" min="0"><br><br><br><br>
+            
+                        <label for="slchild">Sri lankan Children:<br></label>
+                        <input type="number" id="slchild" name="slchild" value="0" min="0"><br><br><br><br>
+            
+                        <label for="fadult">Foreigner Adults:<br></label>
+                        <input type="number" id="fadult" name="fadult" value="0" min="0"><br><br><br><br>
+            
+                        <label for="fchild">Foreigner Children:<br></label>
+                        <input type="number" id="fchild" name="fchild" value="0" min="0"><br><br><br><br>
+            
+                        <label for="infant">Infants:<br></label>
+                        <input type="number" id="infant" name="infant" value="0" min="0"><br><br><br><br>
+            
+                        
+                        <form method="get" id="ticketsForm">
+                          <div class="calendar">
+                              <label for="datePicker">Date:</label><br>
+                              <input type="date" id="datePicker">
+                              <p id="chosenDate"></p>
+
+                    </div>
+                </div>
+                
+                      
+                      <br>
+                      <br>
+                      <br>
+                      <div class="timing">
+                          <label for="timeSlots">Select a time slot:
+                            <br>
+                          </label>
+                          <select id="timeSlots" multiple>
+                              <option value="7-8">07.00 am-08.00 am</option>
+                              <option value="8-9">08.00 am-09.00am</option>
+                              <option value="9-10">09.00 am-10.00am</option>
+                              <option value="10-11">10.00 am-11.00am(peak)</option>
+                              <option value="11-12">11.00 am-12.00pm(peak)</option>
+                              <option value="12-1">12.00 pm-1.00pm(peak)</option>
+                              <option value="1-2">1.00 pm-2.00pm</option>
+                              <option value="2-3">2.00 pm-3.00pm</option>
+                              <option value="3-4">3.00 pm-4.00pm(peak)</option>
+                              <option value="4-5">4.00 pm-5.00pm(peak)</option>
+                              <option value="5-6">5.00 pm-6.00pm(peak)</option>
+                          </select><br><br>
+                         <div class="container">Seleted Time Slots: <p id="selectedTimeSlot"></p></div>
+                      </div><br><br><br>
+                      <input type="submit" value="calculate"><br><br>
+            </form>    
+            </div>
+        
+            <br><br><br>
+
+
+
+           
+    
+
+
+
+
+        <table class="content-table2">  
+            <tr>
+                <td>Date</td>
+                <td id="selectedDate"></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td id="timehrs"></td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td id="durationnn"></td>
+            </tr>
+            <tr>
+                <th>Tickets</th>
+                <th>Charges</th>
+            </tr>
+            <tr id="slAdultsss">
+                <td id="slAdultSummary"> Sl adult</td>
+                <td id="slAdultSummaryPrice"></td>
+            </tr>
+            <tr id="slChilddd">
+                <td id="slChildSummary"> Sl child</td>
+                <td id="slChildSummaryPrice"></td>
+            </tr>
+            <tr id="fAdultsss">
+                <td id="fAdultSummary"> foreigner adult</td>
+                <td id="fAdultSummaryPrice"></td>
+            </tr>
+            <tr id="fChilddd">
+                <td id="fChildSummary"> foreigner child</td>
+                <td id="fChildSummaryPrice"></td>
+            </tr>
+            <tr id="infantsssRow">
+                <td id="infantSummary"> infant</td>
+                <td id="infantSummaryPrice"></td>
+            </tr>
+            <tr>
+                <th>Total Payable </th>
+                <th id="totPaysummary"> $10</th>
+            </tr>
+        </table>
+        <div class="continue"><a href="details.html" class="nextbutton">Continue with the purchase</a></div>
+        <br><br><br><br><br><br><br>
+        </div>
+        </div>
+        </div>
+        
+
+
+
+        
+        <script src="tickets.js"></script>
+    </body>
+</html>

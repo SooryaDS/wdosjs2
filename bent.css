@@ -1,0 +1,219 @@
+@import url(https://fonts.google.com/specimen/Playfair);
+*{
+    margin:0 ;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.marquee{
+    background-color: rgba(108, 78, 42, 0.653);
+
+}
+.banner{
+      
+    overflow: auto;
+    background-repeat: no-repeat;
+    height: 300%;
+    background-size: cover;
+    width: 100%;
+    background-color: bisque;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+ 
+   
+}
+.navbar{
+    width: 100%;
+    margin: 0px;
+    padding: 50px 0;
+    display:inline;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    font-size:x-small;
+    font-family: Arial;
+    background-color: #461355;
+
+}
+.logo{
+    width: 300px;
+    
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    float: inline-start;
+    font-size: xx-large;
+    font-family: Arial ;
+    font-weight: bold;
+    color: azure;
+    border-radius: 30px;
+
+
+
+}
+.logo-container{
+    display:inline-flex;
+    align-items:center;
+    padding: 10%;
+    
+}
+
+.navbar ul li{
+    list-style:none;
+    display:inline-block;
+    text-align: center;
+    margin: 5px;
+    padding: 0px ;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+ 
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #1d1307;
+    text-transform: uppercase;
+}
+.a.active, a:hover{
+    background: rgba(90, 71, 28, 0.333);
+    transition: .5s;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+
+.section1{
+    background-color: rgb(75, 63, 13);
+    width: 80%;
+    border: #47370b;
+    padding: 50px;
+    margin: 70px;
+    border-radius: 15px;
+    align-items: center;
+    align-self: center;
+    align-content:center;
+    justify-content: left;
+    margin-bottom: 120px;
+    
+}
+label.title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: azure;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 80px;
+
+}
+.content2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:medium;
+    justify-content: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  
+
+
+    color: rgb(244, 235, 191);
+
+}
+.General{
+    font-size: 100px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(243, 252, 111);
+}
+.mainimg{
+    margin-top: 10px;
+    width: 1000px;
+    height: 600px;
+    margin-left: -70px;
+    padding-bottom: 50px;
+
+    border-radius: 50px;
+   
+
+}
+.pic1{
+    margin-top: 20px;
+    width: 400px;
+    border-radius: 5px;
+    margin-left: 20%;
+    padding-bottom: 10px;
+
+    transition: transform .2s;
+}
+.pic1:hover{
+    transform: scale(1.1);
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:80%;
+    height:400px;
+    margin-left: 20%;
+}.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:80%;
+    height:400px;
+}.gmap_iframe {
+    height:400px!important;
+    border-radius: 30px;
+}
+.footer{
+    color: #d0cbf1;
+    text-align: right;
+    background-color: #150e42;
+    font-size: small;
+    padding: 10px;
+}
+@media(min-width:320px) AND (max-width:480px){
+    .mainimg{
+        width:118%;
+        margin-left: -7%;
+        height:400px ;
+    
+
+    }
+    .pic1{
+        width: 100%;
+        margin-left: -1%;
+    }
+    .General{
+        font-size: xx-large;
+    }
+    .section1{
+        width:101%;
+        margin-left: -17%;
+
+    }
+}
+@media(min-width:478px) AND (max-width:768px){
+    .General{
+        font-size: xx-large;
+    }
+    .mainimg{
+        width:110%;
+        height:400px;
+        margin-left:-2%;
+    }
+    .pic1{
+        width:100%;
+        margin-left:-1%;
+    }
+    .section1{
+        width:88.85%;
+        margin-left:-5%;
+    }
+   
+}
